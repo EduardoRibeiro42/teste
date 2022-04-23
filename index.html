@@ -1,0 +1,21 @@
+<html>
+    <head>
+    </head>
+   
+<script>
+function validate(){
+    var name = document.getElementById("name");
+    if (name.value == ""){
+        alert("please enter")
+        return false;
+    }
+}
+</script>
+<body>
+<form method = "get" onsubmit="return validate()" action = "handler.php">
+    <label>Name: </label>
+    <input type = "text" id = "name" name = "name" />
+    <input type = "submit" name = "submit" id = "submit">
+</form>
+</body>
+</html>
